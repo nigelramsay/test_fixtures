@@ -31,7 +31,7 @@ test_fixtures(FixturesTest)
      test/unit/fixtures_test.rb:7:in `each'
      test/unit/fixtures_test.rb:7:in `test_fixtures'
      /Users/nigelramsay/projects/sharesight/vendor/rails/activesupport/lib/active_support/testing/setup_and_teardown.rb:33:in `__send__'
-     /Users/nigelramsay/projects/sharesight/qsr/vendor/rails/activesupport/lib/active_support/testing/setup_and_teardown.rb:33:in `run']:
+     /Users/nigelramsay/projects/sharesight/vendor/rails/activesupport/lib/active_support/testing/setup_and_teardown.rb:33:in `run']:
 Region[408794758] is not valid:
   Label is too short (minimum is 3 characters)
   Label can't be blank.
