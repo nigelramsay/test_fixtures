@@ -1,13 +1,14 @@
 TestFixtures
 ============
 
-A unit test called "fixtures_test" which confirms each of your fixtures are valid. 
+Adds a unit test called "fixtures_test" which confirms each of your fixtures are valid. 
 
 Just run:
 
 rake test:units
   or
 ruby test/units/fixtures_test.rb
+
 
 Example Output
 ==============
@@ -38,9 +39,24 @@ Region[408794758] is not valid:
 
 1 tests, 36 assertions, 1 failures, 0 errors
 
+
+Installation instructions
+=========================
+
+To install, run this:
+script/plugin install git://github.com/nigelramsay/test_fixtures.git
+
+To uninstall, run this:
+script/plugin remove test_fixtures
+
+
 Credits
 =======
 
-Much of the code here is from an rspec test. It was somewhere out there on the internet, but I can't remember where. Credit goes to that guy. I just tweaked it to run without rpec, and enhanced the failure reporting.
+Much of the code is from an rspec test case. I found it somewhere out there on the internet, but I can't remember where. Credit goes to that guy. I just tweaked it to remove the rspec dependency, and enhanced the failure reporting.
+
+
+
+
 
 Copyright (c) 2008 Able Technology Limited, released under the MIT license
