@@ -1,0 +1,46 @@
+TestFixtures
+============
+
+A unit test called "fixtures_test" which confirms each of your fixtures are valid. 
+
+Just run:
+
+rake test:units
+  or
+ruby test/units/fixtures_test.rb
+
+Example Output
+==============
+
+If your test fails, you will get an error message such as:
+
+$ ruby test/unit/fixtures_test.rb 
+Loaded suite test/unit/fixtures_test
+Started
+F
+Finished in 0.503429 seconds.
+
+  1) Failure:
+test_fixtures(FixturesTest)
+    [test/unit/fixtures_test.rb:35:in `assert_valid'
+     test/unit/fixtures_test.rb:34:in `assert_valid'
+     test/unit/fixtures_test.rb:11:in `test_fixtures'
+     test/unit/fixtures_test.rb:10:in `each'
+     test/unit/fixtures_test.rb:10:in `test_fixtures'
+     test/unit/fixtures_test.rb:7:in `each'
+     test/unit/fixtures_test.rb:7:in `test_fixtures'
+     /Users/nigelramsay/projects/sharesight/vendor/rails/activesupport/lib/active_support/testing/setup_and_teardown.rb:33:in `__send__'
+     /Users/nigelramsay/projects/sharesight/qsr/vendor/rails/activesupport/lib/active_support/testing/setup_and_teardown.rb:33:in `run']:
+Region[408794758] is not valid:
+  Label is too short (minimum is 3 characters)
+  Label can't be blank.
+<false> is not true.
+
+1 tests, 36 assertions, 1 failures, 0 errors
+
+Credits
+=======
+
+Much of the code here is from an rspec test. It was somewhere out there on the internet, but I can't remember where. Credit goes to that guy. I just tweaked it to run without rpec, and enhanced the failure reporting.
+
+Copyright (c) 2008 Able Technology Limited, released under the MIT license
